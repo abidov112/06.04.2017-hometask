@@ -1,0 +1,61 @@
+1.VARIABLE-lar yazdigimiz deyerleri alan ve ya proqram calismasiyla deyerlerin saxlanildigi yerdir.
+Variables kompyuter programlarinda rahatliqla istifade edile bilecek melumatlari depolamag ucundur.
+Onlar hemcinin tesirli melumatlari aciqlanan ad ile temin etmeleri , bizim proqramimizin oxucular
+ve biz terefden dahada aydin olmasina komeklik gosterir.Variables saxlanilan informasiya konteyneridir.
+Onlarin meqsedleri saxladiglari melumatlari sonra proqram zamani istifade edilmesir.
+2.Deyiskeni tanima ise burada girilecek melumatlarin ne oldugu ile bagli variable novunu teyin edir.
+Taninmada mueyyen sertler var.boyuk kicik herf ferqliliyi var,variablenin adlari reqemle baslamaz,
+diger simvollardan istifade edilmez toplama cixma kimi,bosluq yazilmaz,ingilis herflerinnen istifade 
+olunur ancag.Variable-in novleri iki denedir,biri reqemsal digeri ise metinsal olarag iki yere ayrilir.
+reqemsalda melumatlar "stack"bolmesine yigilir metinsalda ise "heap" bolgesinde.
+En cox istifade olunan data type "Integer"-dir.Integer yalniz verilenlerin reqemsal ifadesi ucundur.
+Kesr saylari qebul elemir,yalniz tam saylar girilmelidir. -2147483648  ve +2147483647 onun ala bileceyi 
+qiymetler araligidir,tutdugu yer ise 4 baytdir.
+Ikinci en cox istifadesi olan ise "string"-dir ve bu nov ise sadece metnler ucundur.Adeten uzun metnler,
+cumleler yazamag ucun istifade olunan bir tipdir.Stringin istifadesi zamani her zaman metnler dirnaq 
+icinde yazilmalidir,halbuki integerde  bunu teleb etmirler.Yazilma limiti olmadiginnan tutdugu yerde 
+deqiq deyl metnin uzunnugun asili olarag deyisir.
+Ucuncu data type ise "Byte"-dir bu integere benzeyir tam sayilar burada istifade olunur tutdugu yer ise 
+minimumdur.0-255 araliginda qiymetler ala bilir menfiler ala bilmir,esasen yasda,hava durumunda ve s. 
+bu kimi meselelerde istifade olunur.
+Doruncu data type ise "Long" -dur buda byte ve integere benzeyir ama bunun qiymetler araligi cox boyukdur 
+tutdugu yerde hemcinin integerden 2 defe boyukdur.tutdugu yer 8 baytdir, (-)9.223.372.036.854.775.808 ve 
+(+)9.223.372.036.854.775.808 araliglari ala bilir.ehtiyac duyulmadigca integerden istifade olunur bunun 
+evezine.
+Besinci data type "Char"-dir.character-in qisadirmis versiyasidir adindanda gorulduyu kimi tek simvol 
+yazila biler ora bu herfdee ola biler ve ya reqemde ve hemcinin hemise tek dirnaq icinde yazilamlidir 
+tutdugu yer ise 2 baytdir.butun UNiCODE simvollarindanda istiffade etmek olar.
+Altinci data type "Double","Float" ve "Decimal" dirlar.Hamisinda kesr saylarini
+yazmag ucun istifade olunur.Doubleda tutulan yer 8 baytdir reqemlerin mertebe sayi ise 16dir.Yazinin
+sonunda boyuk D ve ya kicik d yaza bilersiniz.Novbeti ise Float-dir oda eyniyle Double benzeyir sadece
+tutdugu yer ve reqemlerin mertebe sayi ferqi var .(4 bayt ve 7 mertebeli reqemler)yazinin sonun boyuk
+ve kicik f yazmaq kifayetdir.Sonuncub ise Decimal-dir burada en boyuk olan nov budur kesr saylarinda 
+tutdugu yer 16bayt mertebe vahidlerinin sayi ise 29 dur.Yazilarin sonunda boyuk ve kicik d yazilir
+bes bunlar  arasindaki ferq nedir birinci ferq onlarin tutduglari yer ve ala bileceyi maksimum mertebe 
+vahidleridir.Esas ferq ise  decimal deqiq hesablayir verilenleri bank islerinde maliyyede istifade olunur
+ama float ve double ise yuvarlaqlasdirir,deqiq olamdigindan onlari maliyye islerinde istifade elemek olmur.
+Ve sonda "Bool" data type burada primitiv melumat novudur iki cavab alina biler burada true ve ya false
+proqramlasdiram dillerinde true 1 false ise 0 kimi taninir minimum yer tutumu ise 1 bitdir.
+3.Operators
++  toplama emeliyyati
+- cixma emeliyyati
+* vurma emeliyyati
+/ bolme emeliyyati
+%  qaligin gostericisidir.
+4.Mentiq operatorlari 3 ededdir.
+&& =AND
+|| =OR
+! =alinan neticenin eksini bildirir.
+&& isaresi islenerse eger qoyyulan sertlerin her biri dogru olmalidir,eger biri false olarsacavab false cixar.
+example:5=5&&6=6&&7=8 false olacag iki sert duzgun olsada ucundu false olduguna gore false olacag
+|| bu isarede eger wertlerden yalnizca biri true olarsa onda cavabimizda true cixacag
+example true||false||false||false 
+burada cavab true cixacag cunki bir wertimizin neticesi true-dur
+ve sonda ! simvolu iwledilen yerde neticeni eksine cevirir meselen: !true cavabi false-dur.
+5.Conditional operators
+== verilen deyerlerin dogrulugunu yoxluyur 7==7 true;7==8 false
+!= bu operator verilenlerin bir birine beraber olamamisini gosterir 7!=8 true
+> verilenin digerininnen boyuk olmasini gosteirir 8>7 true;7>8 false
+< verilenin digerinnen kicik olmasini gosterir 7<8 true;8<7 false
+>= verilenin digerinnen boyuk beraber olmasini gosterir 7>=7 true 8>=7 true 7>=8 false
+<= verileinin digerinnen kicik beraber olmasini gosterir 7<=7 true 7<=8 true 8<=7 false
